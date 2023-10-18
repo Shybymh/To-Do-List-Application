@@ -81,12 +81,12 @@
 
       <div class="container main mt-5">
         <h2 class="text-center mb-4">Add your tasks below</h2>
-
         <form id="addForm" class="main_form">
           <input
             type="text"
             onkeyup="enableSubmit(this, 'submitBtn')"
             id="item"
+            name="item"
             placeholder="Input your task"
           />
           <input type="text" id="dueDate" placeholder="Set your due date" />
@@ -95,7 +95,6 @@
             class="form_btn"
             id="submitBtn"
             value="+ Add Task"
-            disabled
             style="background-color: rgb(1,110,225); color: white;"
           />
           <button id="editTask" class="form_btn" style="display: none;">
